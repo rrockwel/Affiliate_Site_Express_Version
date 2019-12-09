@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 // Load User Model
-const User = require('../models/user');
+const User = require('../models/User');
 
 // Register User
 router.get('/register', (req, res)=>{
@@ -100,8 +100,10 @@ router.post('/register', [
 })
 
 router.post('/login', (req, res)=>{
-	
+
 })
 
 
 module.exports = router;
+
+
