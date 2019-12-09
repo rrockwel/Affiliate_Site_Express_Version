@@ -1,0 +1,38 @@
+	<%- include ('partials/Header') %>
+	<%- include ('partials/NavBar') %>
+	<%- include ('partials/Jumbotron') %>
+	<div class="container">
+		<% data.forEach(function(category){ %>
+			
+			<h2 class="mb-4"><%= category.category %>*</h2>
+			<% if(category.details.length > 1){ %>
+				<div class="row row-cols-1 row-cols-md-3">
+					<% category.details.forEach(function(site){ %>
+						<div class="col mb-4">
+							<div class="card border-info">
+								<img class='card-img-top' src="<%= site.imgUrl %>" alt="">
+								<h5 class="card-title"><%= site.name %></h5>
+								<p class="card-text">Price: <%= site.price %></p>
+								<a href="<%= site.affiliate_link %>" target="__blank" class='btn btn-primary'>Try <%= site.name %></a>
+							</div>
+						</div>
+					<% }) %>
+				</div>
+			<% } else{ %>
+				<div class="d-flex row justify-content-center">
+					<% category.details.forEach(function(site){ %>
+					<div class="col-4 mb-4">
+						<div class="card border-info">
+							<img src="<%= site.imgUrl %>" alt="" class="card-img-top">
+							<h5 class="card-title"><%= site.name %></h5>
+							<p class="card-text">Price: <%= site.price %></p>
+						</div>
+					</div>
+					<% }) %>
+				</div>
+			<% } %>
+		<% }) %>
+	</div>
+
+	<%- include ('partials/Disclaimer') %>
+	<%- include ('partials/Footer') %>

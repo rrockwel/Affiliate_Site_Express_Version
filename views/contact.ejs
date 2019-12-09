@@ -1,0 +1,35 @@
+
+	<%- include ('partials/Header') %>
+	<%- include ('partials/NavBar') %>
+	<%- include ('partials/Jumbotron') %>
+
+	
+<div class="d-flex container justify-content-center">
+	<div class="col-10 col-lg-8">
+		<div class="card p-4">
+			<form id='contact-form' onSubmit='/contact' method="POST">
+				<h2 class='mb-4 text-center'>Contact Us</h4>
+				<div class="form-group text-center">
+					<h5><label for="firstName">First Name</label></h5>
+					<input type="text" class="form-control" id='firstName' name='firstName'>
+				</div>
+				<div class="form-group text-center">
+					<h5><label for="lastName">Last Name</label></h5>
+					<input type="text" class="form-control" id='lastName' name='lastName'>
+				</div>
+				<div class="form-group text-center">
+					<h5><label for="email">Email Address</label></h5>
+					<input type="email" class="form-control" id='email' name='email'>
+				</div>
+				<div class="form-group text-center">
+					<h5><label for="message">Please leave us your feedback...</label></h5>
+					<textarea type="text" class="form-control" id='message' name='message'></textarea>
+				</div>
+				<button class="btn btn-primary btn-submit">Send Feedback</button>
+			</form>
+		</div>	
+	</div>
+</div>
+
+
+	<%- include ('partials/Footer') %>

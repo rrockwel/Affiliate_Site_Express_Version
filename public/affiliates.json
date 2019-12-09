@@ -1,0 +1,98 @@
+[
+	{
+		"category": "Transcription Services",
+		"details": [
+				{
+				"name": "GoTranscript", 
+				"imgUrl": "Gotranscript-Logo.png", 
+				"price": "$0.72/min",
+				"affiliate_link": "https://gotranscript.com/r/1116601"
+				},
+
+				{
+				"name": "Transcription Hub",
+				"imgUrl": "Transcription-Hub-Logo.png",
+				"price": "$0.75/min"
+				},
+
+				{
+				"name": "Sonix",
+				"imgUrl": "Sonix-Logo.png",
+				"price": "$10/hr"
+				},
+
+				{
+				"name": "Scribie",
+				"imgUrl": "Scribie-Logo.png",
+				"price": ""
+				},
+
+				{
+				"name": "TextRoyal",
+				"imgUrl": "Text-Royal-Logo.png",
+				"price": ""
+				},
+
+				{
+				"name": "WeScribeIt",
+				"imgUrl": "Wescribeit-Logo.png",
+				"price": ""
+				}
+			]
+	},
+	{
+		"category": "Transcription Programs",
+		"details": [
+				{
+				"name": "Dragon Naturally Speaking",
+				"imgUrl": "Dragon-Naturally-Speaking-Logo.png",
+				"price": ""
+				}
+		]
+	},
+
+	{
+		"category": "Translation Services",
+		"details": [
+			{
+				"name": "DayTranslations",
+				"imgUrl": "Day-Translations-Logo.png",
+				"price": ""
+			},
+
+			{
+				"name": "Universal Translation Services",
+				"imgUrl": "Universal-Translation-Services-Logo.png",
+				"price": ""
+			},
+
+			{
+				"name": "60 Minutes Translations",
+				"imgUrl": "60-Minutes-Translations-Logo.png",
+				"price": ""
+			}
+		]
+	},
+
+	{
+		"category": "Transcription Training",
+		"details": [
+			{
+				"name": "TranscribeAnywhere",
+				"imgUrl": "Transcribe-Anywhere-Logo.png",
+				"price": ""
+			}
+		]
+	},
+
+	{
+		"category": "Spreed Reading Training",
+		"details": [
+			{
+				"name": "RevItUpReading",
+				"imgUrl": "Revitup-Reading-Logo.png",
+				"price": ""
+			}
+		]
+	}
+]

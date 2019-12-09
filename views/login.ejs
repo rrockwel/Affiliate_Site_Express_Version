@@ -1,0 +1,26 @@
+<%- include ('partials/Header') %>
+<%- include ('partials/NavBar') %>
+<%- include ('partials/Jumbotron') %>
+
+	<div class="d-flex container justify-content-center">
+		<div class="col-10 col-lg-8">
+			<div class="card p-4">
+				<form action="/login" id="login-form" method='POST'>
+					<h2 class='mb-4 text-center'>Login</h2>
+					<div class="form-group text-center">
+						<h5><label for="email">Email Address</label></h5>
+						<input type="text" class="form-control text-center" id='email' name='email'>
+					</div>
+					<div class="form-group text-center">
+						<h5><label for="password">Password</label></h5>
+						<input type="password" class="form-control text-center" id='password' name='password'>
+					</div>
+					<button class="btn btn-primary">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+<%- include ('partials/Footer') %>
