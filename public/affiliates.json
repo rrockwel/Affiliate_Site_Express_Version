@@ -12,31 +12,36 @@
 				{
 				"name": "Transcription Hub",
 				"imgUrl": "Transcription-Hub-Logo.png",
-				"price": "$0.75/min"
+				"price": "$0.75/min",
+				"affiliate_link":
 				},
 
 				{
 				"name": "Sonix",
 				"imgUrl": "Sonix-Logo.png",
-				"price": "$10/hr"
+				"price": "$10/hr",
+				"affiliate_link":
 				},
 
 				{
 				"name": "Scribie",
 				"imgUrl": "Scribie-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "https://scribie.com/account/sign-up?rc=80ebbed8eb6344d69feb0cd702158e8315e63cc1"
 				},
 
 				{
 				"name": "TextRoyal",
 				"imgUrl": "Text-Royal-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "https://textroyal.com/r/1052"
 				},
 
 				{
 				"name": "WeScribeIt",
 				"imgUrl": "Wescribeit-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "http://wescribeit.com/?a=415C8861-9F43-7F35-17A78F05C288B56B"
 				}
 			]
 	},
@@ -46,7 +51,8 @@
 				{
 				"name": "Dragon Naturally Speaking",
 				"imgUrl": "Dragon-Naturally-Speaking-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link":
 				}
 		]
 	},
@@ -57,19 +63,22 @@
 			{
 				"name": "DayTranslations",
 				"imgUrl": "Day-Translations-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link":
 			},
 
 			{
 				"name": "Universal Translation Services",
 				"imgUrl": "Universal-Translation-Services-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "https://www.universal-translation-services.com/?ap_id=rrockwel"
 			},
 
 			{
 				"name": "60 Minutes Translations",
 				"imgUrl": "60-Minutes-Translations-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "https://www.60minutestranslations.com/translate/affiliate/rrockwel"
 			}
 		]
 	},
@@ -80,7 +89,8 @@
 			{
 				"name": "TranscribeAnywhere",
 				"imgUrl": "Transcribe-Anywhere-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link": "https://www.transcribeanywhere.com/a/15077/gJt2copD"
 			}
 		]
 	},
@@ -91,7 +101,8 @@
 			{
 				"name": "RevItUpReading",
 				"imgUrl": "Revitup-Reading-Logo.png",
-				"price": ""
+				"price": "",
+				"affiliate_link":
 			}
 		]
 	}
