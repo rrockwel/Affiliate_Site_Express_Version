@@ -20,7 +20,7 @@
 				"name": "Sonix",
 				"imgUrl": "Sonix-Logo.png",
 				"price": "$10/hr",
-				"affiliate_link":
+				"affiliate_link": ""
 				},
 
 				{
@@ -52,7 +52,7 @@
 				"name": "Dragon Naturally Speaking",
 				"imgUrl": "Dragon-Naturally-Speaking-Logo.png",
 				"price": "",
-				"affiliate_link":
+				"affiliate_link": ""
 				}
 		]
 	},
@@ -64,7 +64,7 @@
 				"name": "DayTranslations",
 				"imgUrl": "Day-Translations-Logo.png",
 				"price": "",
-				"affiliate_link":
+				"affiliate_link": ""
 			},
 
 			{
@@ -102,7 +102,7 @@
 				"name": "RevItUpReading",
 				"imgUrl": "Revitup-Reading-Logo.png",
 				"price": "",
-				"affiliate_link":
+				"affiliate_link": ""
 			}
 		]
 	}
