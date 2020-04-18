@@ -1,7 +1,6 @@
 	<%- include ('partials/Header') %>
-	<%- include ('partials/NavBar') %>
 	<%- include ('partials/Jumbotron') %>
-	<div class="container">
+	<div class="container mb-5">
 		<% data.forEach(function(category){ %>
 			
 			<h2 class="mb-4"><%= category.category %>*</h2>
@@ -9,10 +8,11 @@
 				<div class="row row-cols-1 row-cols-md-3">
 					<% category.details.forEach(function(site){ %>
 						<div class="col mb-4">
-							<div class="card border-info">
+							<div class="card pl-4 pr-4 pb-4">
 								<img class='card-img-top' src="<%= site.imgUrl %>" alt="">
 								<h5 class="card-title"><%= site.name %></h5>
 								<p class="card-text">Price: <%= site.price %></p>
+								<a href="#" id="<%= site.name %>_moreInfo" class='text-center p-2'>More Info</a>
 								<a href="<%= site.affiliate_link %>" target="__blank" class='btn btn-primary'>Try <%= site.name %></a>
 							</div>
 						</div>
@@ -22,7 +22,7 @@
 				<div class="d-flex row justify-content-center">
 					<% category.details.forEach(function(site){ %>
 					<div class="col-4 mb-4">
-						<div class="card border-info">
+						<div class="card border-info pl-4 pr-4 pb-4">
 							<img src="<%= site.imgUrl %>" alt="" class="card-img-top">
 							<h5 class="card-title"><%= site.name %></h5>
 							<p class="card-text">Price: <%= site.price %></p>
@@ -35,5 +35,4 @@
 		<% }) %>
 	</div>
 
-	<%- include ('partials/Disclaimer') %>
 	<%- include ('partials/Footer') %>

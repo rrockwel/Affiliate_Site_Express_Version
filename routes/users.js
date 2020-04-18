@@ -3,6 +3,7 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const passport = require('passport');
 
 // Load User Model
 const User = require('../models/User');
@@ -14,13 +15,18 @@ router.get('/register', (req, res)=>{
 
 // Login Page
 router.get('/login', (req, res) =>{
-	res.render('login');
+	res.render('login', {data: ''});
 })
 
 // MongoDB
 const db = require('../config/keys').MongoURI;
 // Connect To Mongo
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(db, { 
+		useNewUrlParser: true,
+		useUnifiedTopology: true, 
+		useCreateIndex: true 
+	})
+
 	.then(()=>console.log("Connected to MongoDB"))
 	.catch(err=> console.log(err))
 
@@ -88,19 +94,28 @@ router.post('/register', [
 					// Save User
 					newUser.save()
 						.then(user=>{
-							res.render('login', { data: {msg:'You Are Now Registered'}});
+							req.flash(
+								'success_msg',
+								'You are now registered and can log in'
+								)
+							res.redirect('/login');
 						})
 						.catch(err=> console.log(err))
 				})
 			})
 
-			// req.flash('success_msg', "You are now Registered and can Log In");
+			 // req.flash('success_msg', "You are now Registered and can Log In");
 		 	// res.redirect('register')
 		}
 })
 
-router.post('/login', (req, res)=>{
-
+// Handle Login
+router.post('/login', (req, res, next)=>{
+	passport.authenticate('local', {
+		successRedirect: '/',
+		failureRedirect: '/login',
+		failureFlash: true
+	})(req, res, next)
 })
 
 

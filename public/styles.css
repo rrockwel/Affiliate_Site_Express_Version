@@ -6,7 +6,7 @@
 
 .card {
 	box-shadow: 10px 5px 5px #d3d3d3;
-	background-color:#55e096;
+	background-color:#30C04A;
 }
 
 h5 {
@@ -27,4 +27,29 @@ body {
 
 .btn-primary {
 	box-shadow: 2px 4px 2px #4381EB;
+}
+
+.nav{
+	transform: translateY(-100%);
+}
+
+.nav-item > .nav-link {
+	color: red;
+	text-shadow: 1px 1px 1px purple;
+}
+
+.nav-item > .nav-link:hover {
+	color: purple;
+	text-shadow: 2px 2px 2px purple;
+}
+
+.jumbotron {
+	max-height: 300px;
+}
+
+.jumbotron > .display-4, .jumbotron > .lead, .jumbotron > .my-4, .jumbotron > p {
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+	text-shadow: 3px 4px 6px #57504d;
 }

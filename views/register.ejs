@@ -1,16 +1,15 @@
 	<%- include ('partials/Header') %>
-	<%- include ('partials/NavBar') %>
 	<%- include ('partials/Jumbotron') %>
 
-	
 	<div class="d-flex container justify-content-center mb-4">
-		<div class="row">
+		<div class="row">			
 		<% if(data.errors){ %>
 			<div class="card bg-danger p-4" role='alert' id='error-group' style='display:block'>
 				<h5>Please: </h5>
-				<ul id='errors'>
+				<ul id='errors' role='alert'>
 					<% data.errors.forEach(function(error){ %>
-						<li><%= error.msg %> </li>
+						<li><%= error.msg %> <button tpye='button' class="close" data-dismiss='alert' aria-label="Close"><span aria-hidden='true'>&times</span></button></li>
+
 
 					<% }) %>
 				</ul>
@@ -18,7 +17,7 @@
 		<% } %>
 		</div>
 	</div>
-	<div class="d-flex container justify-content-center">
+	<div class="d-flex container justify-content-center mb-5">
 		<div class="col-10 col-lg-8">
 			<div class="card p-4">
 				<form action="/register" id="register-form" method='POST'>
